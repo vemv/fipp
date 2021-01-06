@@ -1,10 +1,10 @@
-(ns fipp.edn
+(ns threatgrid.fipp.edn
   "Provides a pretty document serializer and pprint fn for Clojure/EDN forms.
   See fipp.clojure for pretty printing Clojure code."
   (:require [clojure.string :as str]
-            [fipp.ednize :refer [edn record->tagged]]
-            [fipp.visit :refer [visit visit*]]
-            [fipp.engine :refer (pprint-document)]))
+            [threatgrid.fipp.ednize :refer [edn record->tagged]]
+            [threatgrid.fipp.engine :refer [pprint-document]]
+            [threatgrid.fipp.visit :refer [visit visit*]]))
 
 (defn pretty-coll [{:keys [print-level print-length] :as printer}
                    open xs sep close f]
@@ -21,7 +21,7 @@
 
 (defrecord EdnPrinter [symbols print-meta print-length print-level]
 
-  fipp.visit/IVisitor
+  threatgrid.fipp.visit/IVisitor
 
 
   (visit-unknown [this x]

@@ -1,7 +1,13 @@
 (ns fipp.ednize-test
-  (:require [clojure.test :refer [deftest is are testing]]
-            [fipp.ednize :refer #?(:clj [edn java-sql-timestamp? java-sql-timestamp]
-                                   :cljs [edn])]))
+  #?@
+   (:clj
+    [(:require
+      [clojure.test :refer [are deftest is testing]]
+      [threatgrid.fipp.ednize :refer [edn java-sql-timestamp java-sql-timestamp?]])]
+    :cljs
+    [(:require
+      [clojure.test :refer [are deftest is testing]]
+      [threatgrid.fipp.ednize :refer [edn]])]))
 
 (defrecord R [])
 

@@ -1,4 +1,4 @@
-(ns fipp.util
+(ns threatgrid.fipp.util
   (:refer-clojure :exclude [boolean? char? regexp?]))
 
 ;;TODO: CLJ-1719 and CLJS-1241

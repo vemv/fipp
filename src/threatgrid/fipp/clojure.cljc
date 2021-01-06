@@ -1,9 +1,9 @@
-(ns fipp.clojure
+(ns threatgrid.fipp.clojure
   "Provides a pretty document serializer and pprint fn for Clojure code.
   See fipp.edn for pretty printing Clojure/EDN data structures"
   (:require [clojure.walk :as walk]
-            [fipp.visit :as v :refer [visit]]
-            [fipp.edn :as edn]))
+            [threatgrid.fipp.visit :as v :refer [visit]]
+            [threatgrid.fipp.edn :as edn]))
 
 
 ;;; Helper functions

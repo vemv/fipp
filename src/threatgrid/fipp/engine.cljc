@@ -1,7 +1,7 @@
-(ns fipp.engine
+(ns threatgrid.fipp.engine
   "See: Oleg Kiselyov, Simon Peyton-Jones, and Amr Sabry
   Lazy v. Yield: Incremental, Linear Pretty-printing"
-  (:require [fipp.deque :as deque])
+  (:require [threatgrid.fipp.deque :as deque])
   #?(:clj (:import (java.io Writer))))
 
 

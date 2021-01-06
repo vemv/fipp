@@ -1,6 +1,6 @@
-(ns fipp.repl
+(ns threatgrid.fipp.repl
   (:require [clojure.repl :as clj]
-            [fipp.edn :refer [pprint]]))
+            [threatgrid.fipp.edn :refer [pprint]]))
 
 (defn pst
   "Like clojure.repl/pst, but with ex-info fipp pretty-printing."

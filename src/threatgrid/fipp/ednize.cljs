@@ -1,4 +1,4 @@
-(ns fipp.ednize
+(ns threatgrid.fipp.ednize
   (:require [clojure.string :as s]
             [fipp.util :refer [edn?]]))
 

@@ -1,6 +1,6 @@
 (ns fipp.engine-test
   (:require [clojure.test :refer [deftest is are testing]]
-            [fipp.engine :as e])
+            [threatgrid.fipp.engine :as e])
   #?(:clj (:import (java.io StringWriter))))
 
 ;; Tests for doc1 converted from the Haskell in the literature.

@@ -1,7 +1,7 @@
-(ns fipp.visit
+(ns threatgrid.fipp.visit
   "Convert to and visit edn structures."
-  (:require [fipp.util :as util]
-            [fipp.ednize :refer [override?]]))
+  (:require [threatgrid.fipp.ednize :refer [override?]]
+            [threatgrid.fipp.util :as util]))
 
 ;;;TODO Stablize public interface
 

@@ -1,5 +1,5 @@
-(ns fipp.ednize
-  (:require [fipp.util :refer [edn?]]))
+(ns threatgrid.fipp.ednize
+  (:require [threatgrid.fipp.util :refer [edn?]]))
 
 (defprotocol IEdn
   "Perform a shallow conversion to an Edn data structure."

@@ -1,4 +1,4 @@
-(ns fipp.deque
+(ns threatgrid.fipp.deque
   "Double-sided queue built on rrb vectors."
   (:refer-clojure :exclude [empty concat])
   (:require [clojure.core.rrb-vector :as rrb]))

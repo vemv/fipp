@@ -2,7 +2,7 @@
   (:require [clojure.test :refer [deftest is are testing]]
             [clojure.string :as str]
             [fipp.test-util :refer [clean]]
-            [fipp.clojure :refer [pprint]]))
+            [threatgrid.fipp.clojure :refer [pprint]]))
 
 (deftest symbols-test
   (testing "Some symbols are treated specially."

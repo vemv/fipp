@@ -1,8 +1,8 @@
 (ns fipp.edn-test
-  (:require [clojure.test :refer [deftest is are testing]]
-            [fipp.test-util :refer [clean]]
-            [fipp.edn :refer [pprint]]
-            [fipp.ednize :refer [IEdn IOverride]]))
+  (:require [clojure.test :refer [are deftest is testing]]
+            [threatgrid.fipp.edn :refer [pprint]]
+            [threatgrid.fipp.ednize :refer [IEdn IOverride]]
+            [fipp.test-util :refer [clean]]))
 
 (defrecord Person [first-name last-name])
 
