@@ -88,10 +88,4 @@
       false)))
 
 (def java-sql-timestamp?
-  (and java-sql-timestamp
-       (try
-         ;; strangely, this can fail even if the previous statement succeeded:
-         (require '[clojure.instant])
-         true
-         (catch ExceptionInInitializerError _
-           false))))
+  java-sql-timestamp)
